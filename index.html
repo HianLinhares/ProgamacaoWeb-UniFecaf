@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenhos Clássicos 90s/2000s | Os Simpsons</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Bangers&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <i class="fas fa-tv"></i> Desenhos Clássicos 90s/2000s
+            </h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#personagens">Personagens</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Reviva a Magia dos Desenhos que Marcaram Gerações!</h2>
+                    <p>Explore o universo dos Simpsons, uma das séries mais icônicas da televisão que começou nos anos 90 e continua fazendo sucesso!</p>
+                    <button class="btn" id="load-characters">
+                        <i class="fas fa-play"></i> Carregar Personagens
+                    </button>
+                </div>
+                <div class="hero-image">
+                    <img src="/ProgamacaoWeb-UniFecaf/assets/images.png" alt="Logo dos Simpsons" class="logo-simpsons">
+                </div>
+            </div>
+        </section>
+
+     
+
+        <section class="characters-section" id="personagens">
+            <div class="container">
+                <h2><i class="fas fa-users"></i> Personagens dos Simpsons</h2>
+                <p class="section-description">Clique no botão acima para carregar os personagens ou aguarde o carregamento automático.</p>
+                
+                <div class="controls">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="search-input" placeholder="Buscar personagem...">
+                    </div>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">Todos</button>
+                        <button class="filter-btn" data-filter="family">Família</button>
+                        <button class="filter-btn" data-filter="friends">Amigos</button>
+                        <button class="filter-btn" data-filter="secondary">Secundários</button>
+                    </div>
+                </div>
+
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>Carregando personagens...</p>
+                </div>
+
+                <div class="characters-grid" id="characters-grid">
+                    <!-- Cards serão inseridos dinamicamente via JavaScript -->
+                </div>
+
+                <div class="pagination" id="pagination">
+                    <!-- Paginação será inserida dinamicamente -->
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="sobre">
+            <div class="container">
+                <h2><i class="fas fa-code"></i> Sobre o Projeto</h2>
+                <div class="about-content">
+                    <div class="about-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Tecnologias Utilizadas</h3>
+                        <p>Este projeto foi desenvolvido com HTML5, CSS3 e JavaScript puro, demonstrando o consumo de APIs REST com Fetch API.</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-database"></i>
+                        <h3>API dos Simpsons</h3>
+                        <p>Dados consumidos em tempo real da API pública dos Simpsons, que contém informações sobre todos os personagens da série.</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Design Responsivo</h3>
+                        <p>Layout adaptável para todos os dispositivos, desde smartphones até desktops, garantindo a melhor experiência do usuário.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Projeto desenvolvido para o curso de programação web para a faculdade Unifecaf</p>
+            <p class="copyright">© 2023 - Desenhos Clássicos 90s/2000s - Hian Linhares</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
