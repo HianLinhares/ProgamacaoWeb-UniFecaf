@@ -1,0 +1,58 @@
+Consumo de API e Manipulação do DOM com JavaScript
+Aluno: Hian Fernando Silva Linhares
+Universidade: UniFECAF
+
+
+
+1. O que é uma API e consumo de dados em tempo real
+
+API (Application Programming Interface) é uma interface que permite a comunicação entre sistemas diferentes de forma padronizada. No desenvolvimento web, APIs possibilitam que aplicações frontend consumam dados de servidores externos por meio de requisições HTTP, geralmente utilizando o formato JSON.
+
+O consumo de dados em tempo real ocorre quando a aplicação busca essas informações diretamente da API no momento da execução, garantindo que os dados exibidos estejam sempre atualizados, sem necessidade de armazenamento prévio.
+
+
+2. Manipulação do DOM e elementos dinâmicos
+
+O DOM (Document Object Model) representa a estrutura do HTML como uma árvore de elementos que podem ser acessados e modificados via JavaScript. A manipulação do DOM permite alterar o conteúdo da página dinamicamente, sem recarregamento.
+
+Por meio dessa técnica, é possível criar, modificar e remover elementos HTML, tornando a aplicação mais interativa e permitindo exibir dados vindos de APIs de forma dinâmica.
+
+
+3. Funções básicas utilizadas no consumo da API
+
+Para o consumo da API e exibição dos dados, são utilizadas funções básicas do JavaScript:
+
+fetch(): realiza requisições HTTP para a API.
+
+then(): trata o retorno assíncrono da requisição.
+
+createElement(): cria elementos HTML dinamicamente.
+
+appendChild(): adiciona os elementos criados ao DOM.
+
+
+
+
+
+
+
+
+
+4. Motivo da escolha da API do Simpsons
+
+A API do Simpsons foi escolhida por ser pública, simples Seu conteúdo facilita o aprendizado sobre consumo de APIs e manipulação do DOM, além de permitir uma visualização clara dos dados retornados, como personagens, frases e imagens.
+
+5. Regras de acesso e documentação da API
+
+A API do Simpsons não exige token de autenticação e utiliza o método HTTP GET para acesso aos dados. As respostas são retornadas no formato JSON e não há limite de requisições explicitado na documentação.
+
+Exemplo de respost[
+  {
+    "quote": "I believe the children are the future...",
+    "character": "Homer Simpson",
+    "image": "https://...",
+    "characterDirection": "Right"
+  }
+]
+a:
+
